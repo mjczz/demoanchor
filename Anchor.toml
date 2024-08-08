@@ -1,0 +1,21 @@
+[toolchain]
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.localnet]
+demoanchor = "HY8ddMJy8FjhvuoQKXcvzYyVEUU3LwywK54gU79SiBWq"
+p2 = "4TeULkp6posG2EE7cax4BVRVscqpkHWuAV6ZKbQrJAXC"
+puppet = "79BP3g8tfm5PMSDkDKt7qBZUaNoaNdRRJ63mXyNgQreA"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Localnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+demo = "pwd && echo 执行这个脚本 "
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
