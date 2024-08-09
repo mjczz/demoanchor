@@ -9,3 +9,7 @@ keys:
 # 删除部署的文件后，还得重启solana-test-validator
 clean:
 	anchor clean
+
+# 展开代码
+expand:
+	cargo expand --package p2 > expand_code/p2.rs
