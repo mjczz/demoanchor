@@ -5,6 +5,7 @@ resolution = true
 skip-lint = false
 
 [programs.localnet]
+counter_anchor = "BBEjSBGK2yRMqZBPzd41GytPuvrq6pE3Fetstnv9XMSh"
 demoanchor = "HY8ddMJy8FjhvuoQKXcvzYyVEUU3LwywK54gU79SiBWq"
 p2 = "4TeULkp6posG2EE7cax4BVRVscqpkHWuAV6ZKbQrJAXC"
 puppet = "79BP3g8tfm5PMSDkDKt7qBZUaNoaNdRRJ63mXyNgQreA"
