@@ -1,11 +1,11 @@
 use anchor_lang::prelude::*;
 
-declare_id!("4TeULkp6posG2EE7cax4BVRVscqpkHWuAV6ZKbQrJAXC");
+declare_id!("3EYNaRt9Sg33bEMLBhCajeadTmmhCJ8n4UybcNEM1Jfa");
 
 #[program]
 pub mod p2 {
-    use anchor_lang::solana_program::entrypoint::ProgramResult;
     use super::*;
+    use anchor_lang::solana_program::entrypoint::ProgramResult;
 
     pub fn initialize(ctx: Context<Initialize>) -> ProgramResult {
         let counter = &mut ctx.accounts.counter;
