@@ -9,7 +9,7 @@ deploy:
 
 # 必须要 --skip-local-validator ，才能使用另一个终端开启的 solana-test-validator
 test:
-	anchor test --skip-local-validator
+	anchor test --skip-local-validator --skip-deploy
 
 keys:
 	anchor keys list
