@@ -1,4 +1,7 @@
 
+local-test:
+	npm run local-test
+
 # 编译
 build:
 	anchor build
