@@ -24,3 +24,8 @@ clean:
 # 展开代码
 expand:
 	cargo expand --package p2 > expand_code/p2.rs
+#	cargo expand --features "idl-build" -p p2 > expand_code/p2.rs
+
+#最后一个参数是文件名，省略.rs后缀
+expand_test_file:
+	cargo expand --test test > czzexpandtest.rs

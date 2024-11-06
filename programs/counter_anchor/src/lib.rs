@@ -2,7 +2,7 @@
 
 use anchor_lang::prelude::*;
 
-declare_id!("EeRX3JoSdTXcRAS5JBHxuVpXWGKKNckSt42nBJQynKW3");
+declare_id!("4io6XRXFS745mbDQYGPHCxnMd8zBAppFUKUgxJV4ewYb");
 
 #[program]
 pub mod counter_anchor {

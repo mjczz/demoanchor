@@ -1,5 +1,3 @@
-[toolchain]
-
 [features]
 resolution = true
 skip-lint = false
@@ -9,10 +7,11 @@ skip-lint = false
 # 更改对应program里面的 declare_id!("4ALfWS4aWMCrCUbnLAjUafVeREZDoGYMErNgv2LZ8T9U");
 # 改完之后 重新 `make build make dploy`，才能测试`make test`
 [programs.localnet]
-counter_anchor = "EeRX3JoSdTXcRAS5JBHxuVpXWGKKNckSt42nBJQynKW3"
-demoanchor = "9H38cHGSZirSQhQbjhvariRUoqPB4fRZJWs5kydhsepa"
-p2 = "3EYNaRt9Sg33bEMLBhCajeadTmmhCJ8n4UybcNEM1Jfa"
-puppet = "4ALfWS4aWMCrCUbnLAjUafVeREZDoGYMErNgv2LZ8T9U"
+p2 = "57zz4Xy1nuwZHiUrpAcCDXAv8S5XXKmPuH4ULvcbTuJL"
+demoanchor = "2wSSiStYruG3QCwVQJNLJbbstR7fuv5dNuMh6NL6HwHC"
+counter_anchor = "4io6XRXFS745mbDQYGPHCxnMd8zBAppFUKUgxJV4ewYb"
+puppet = "6rCaU33iT3BRf591VqwLvWtgcjnLNoC5iqaEQ5Vmktf8"
+
 
 [registry]
 url = "https://api.apr.dev"
