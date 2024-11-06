@@ -29,3 +29,10 @@ expand:
 #最后一个参数是文件名，省略.rs后缀
 expand_test_file:
 	cargo expand --test test > czzexpandtest.rs
+
+
+# 开启本地validator, 关掉vpn，不然会导致连接rpc服务失败
+start-local-test-validator:
+	solana-test-validator -u localhost
+	#solana-test-validator -r
+
