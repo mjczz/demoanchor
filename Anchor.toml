@@ -7,11 +7,11 @@ skip-lint = false
 # 更改对应program里面的 declare_id!("4ALfWS4aWMCrCUbnLAjUafVeREZDoGYMErNgv2LZ8T9U");
 # 改完之后 重新 `make build make dploy`，才能测试`make test`
 [programs.localnet]
-p2 = "57zz4Xy1nuwZHiUrpAcCDXAv8S5XXKmPuH4ULvcbTuJL"
-demoanchor = "2wSSiStYruG3QCwVQJNLJbbstR7fuv5dNuMh6NL6HwHC"
 counter_anchor = "4io6XRXFS745mbDQYGPHCxnMd8zBAppFUKUgxJV4ewYb"
+demoanchor = "2wSSiStYruG3QCwVQJNLJbbstR7fuv5dNuMh6NL6HwHC"
+fight = "25oYgagLMUeCW9J9ehjUvqNkPjwWAtsQxoQDap52Tctx"
+p2 = "57zz4Xy1nuwZHiUrpAcCDXAv8S5XXKmPuH4ULvcbTuJL"
 puppet = "6rCaU33iT3BRf591VqwLvWtgcjnLNoC5iqaEQ5Vmktf8"
-
 
 [registry]
 url = "https://api.apr.dev"
