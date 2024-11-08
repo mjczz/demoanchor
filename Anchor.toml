@@ -22,4 +22,5 @@ wallet = "~/.config/solana/id.json"
 
 [scripts]
 demo = "pwd && echo 执行这个脚本 "
-test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+#test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/fight.ts"

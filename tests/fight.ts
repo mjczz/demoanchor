@@ -17,6 +17,16 @@ describe("fight", () => {
     console.log(actionState)
 
     it("fight: Robot actions!", async () => {
+        let instructions: anchor.web3.TransactionInstruction[] = [];
+        let is_exist: boolean = false
+        const actionStates= await program.account.actionState.all();
+        actionStates.forEach((a) => {
+            if (a.publicKey.toBase58() == actionState.toBase58()) {
+                is_exist = true
+                console.log("已存在了");
+            }
+        })
+
         // Create instruction: set up the Solana accounts to be used
         const createInstruction = await program.methods
             .create()
@@ -26,6 +36,10 @@ describe("fight", () => {
                 systemProgram: anchor.web3.SystemProgram.programId,
             })
             .instruction();
+        if (!is_exist) {
+            instructions.push(createInstruction)
+        }
+
         // Walk instruction: Invoke the Robot to walk
         const walkInstruction = await program.methods
             .walk()
@@ -34,6 +48,8 @@ describe("fight", () => {
                 user,
             })
             .instruction();
+        instructions.push(walkInstruction)
+
         // Run instruction: Invoke the Robot to run
         const runInstruction = await program.methods
             .run()
@@ -42,6 +58,8 @@ describe("fight", () => {
                 user,
             })
             .instruction();
+        instructions.push(runInstruction)
+
         // Jump instruction: Invoke the Robot to jump
         const jumpInstruction = await program.methods
             .jump()
@@ -50,6 +68,8 @@ describe("fight", () => {
                 user,
             })
             .instruction();
+        instructions.push(jumpInstruction)
+
         // Reset instruction: Reset actions of the Robot
         const resetInstruction = await program.methods
             .reset()
@@ -58,15 +78,7 @@ describe("fight", () => {
                 user,
             })
             .instruction();
-
-        // Array of instructions
-        const instructions: anchor.web3.TransactionInstruction[] = [
-            createInstruction,
-            walkInstruction,
-            runInstruction,
-            jumpInstruction,
-            resetInstruction,
-        ];
+        instructions.push(resetInstruction)
 
         await createAndSendV0Tx(instructions);
     });
