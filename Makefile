@@ -16,6 +16,8 @@ test:
 
 keys:
 	anchor keys list
+sync-keys:
+	anchor keys sync
 
 # 删除部署的文件后，还得重启solana-test-validator
 clean:
