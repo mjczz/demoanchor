@@ -12,6 +12,7 @@ demoanchor = "2wSSiStYruG3QCwVQJNLJbbstR7fuv5dNuMh6NL6HwHC"
 fight = "25oYgagLMUeCW9J9ehjUvqNkPjwWAtsQxoQDap52Tctx"
 p2 = "57zz4Xy1nuwZHiUrpAcCDXAv8S5XXKmPuH4ULvcbTuJL"
 puppet = "6rCaU33iT3BRf591VqwLvWtgcjnLNoC5iqaEQ5Vmktf8"
+rent = "CTZmLxmmJTykFgmdeuVqTnE12C1asBpurJZHsR5oKLHf"
 
 [registry]
 url = "https://api.apr.dev"
@@ -22,5 +23,5 @@ wallet = "~/.config/solana/id.json"
 
 [scripts]
 demo = "pwd && echo 执行这个脚本 "
-#test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
-test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/fight.ts"
+#test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/fight.ts"
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/rent.ts"
