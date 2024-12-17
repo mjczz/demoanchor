@@ -7,6 +7,7 @@
       <sourceFolder url="file://$MODULE_DIR$/programs/puppet/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/programs/counter_anchor/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/programs/fight/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/programs/rent/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />

@@ -12,7 +12,7 @@ deploy:
 
 # 必须要 --skip-local-validator ，才能使用另一个终端开启的 solana-test-validator
 test:
-	anchor test --skip-local-validator --skip-deploy
+	anchor test --skip-local-validator --skip-deploy --skip-build --skip-lint
 
 keys:
 	anchor keys list
@@ -25,7 +25,8 @@ clean:
 
 # 展开代码
 expand:
-	cargo expand --package p2 > expand_code/p2.rs
+	#cargo expand --package p2 > expand_code/p2.rs
+##	cargo expand --package counter_anchor  > expand_code/counter_anchor.rs
 #	cargo expand --features "idl-build" -p p2 > expand_code/p2.rs
 
 #最后一个参数是文件名，省略.rs后缀

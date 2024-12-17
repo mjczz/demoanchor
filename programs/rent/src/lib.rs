@@ -3,11 +3,10 @@
 use anchor_lang::prelude::*;
 use anchor_lang::system_program;
 
-declare_id!("CTZmLxmmJTykFgmdeuVqTnE12C1asBpurJZHsR5oKLHf");
+declare_id!("7gUT8ZTgtzMMydSwWVN56pPnFGA2k8QoAtmKJT89NgQ3");
 
 #[program]
 pub mod rent {
-    use lazy_static::lazy_static;
     use super::*;
 
     pub fn create_system_account(
