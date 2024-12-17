@@ -14,6 +14,9 @@ deploy:
 test:
 	anchor test --skip-local-validator --skip-deploy --skip-build --skip-lint
 
+testm:
+	ANCHOR_PROVIDER_URL=http://127.0.0.1:8899 ANCHOR_WALLET=~/.config/solana/id.json ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts
+
 keys:
 	anchor keys list
 sync-keys:
