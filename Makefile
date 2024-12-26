@@ -2,9 +2,9 @@
 local-test:
 	npm run local-test
 
-# 编译
+# build specifiy the output directory for the IDL.
 build:
-	anchor build
+	anchor build --idl $(shell pwd)/app/src/idl/
 
 # 部署生成 bpf,以.so为后缀的可在区块链上执行的bpf字节程序
 deploy:

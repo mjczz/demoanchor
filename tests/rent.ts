@@ -1,6 +1,6 @@
 import * as anchor from '@coral-xyz/anchor';
 // @ts-ignore
-import Idl from '../target/idl/rent.json';
+import Idl from '../app/src/idl/rent.json';
 import type {Rent} from '../app/src/idl/rent';
 
 describe('Create a system account', () => {
