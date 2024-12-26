@@ -19,7 +19,7 @@ describe("fight", () => {
     it("fight: Robot actions!", async () => {
         let instructions: anchor.web3.TransactionInstruction[] = [];
         let is_exist: boolean = false
-        const actionStates= await program.account.actionState.all();
+        const actionStates = await program.account.actionState.all();
         actionStates.forEach((a) => {
             if (a.publicKey.toBase58() == actionState.toBase58()) {
                 is_exist = true
@@ -31,6 +31,7 @@ describe("fight", () => {
         const createInstruction = await program.methods
             .create()
             .accounts({
+                // @ts-ignore
                 actionState,
                 user,
                 systemProgram: anchor.web3.SystemProgram.programId,
@@ -45,6 +46,7 @@ describe("fight", () => {
             .walk()
             .accounts({
                 actionState,
+                // @ts-ignore
                 user,
             })
             .instruction();
@@ -55,6 +57,7 @@ describe("fight", () => {
             .run()
             .accounts({
                 actionState,
+                // @ts-ignore
                 user,
             })
             .instruction();
@@ -65,6 +68,7 @@ describe("fight", () => {
             .jump()
             .accounts({
                 actionState,
+                // @ts-ignore
                 user,
             })
             .instruction();
@@ -75,6 +79,7 @@ describe("fight", () => {
             .reset()
             .accounts({
                 actionState,
+                // @ts-ignore
                 user,
             })
             .instruction();
