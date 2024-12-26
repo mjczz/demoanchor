@@ -1,6 +1,6 @@
 import * as anchor from "@coral-xyz/anchor";
 import { Program } from "@coral-xyz/anchor";
-import { Demoanchor } from "../target/types/demoanchor";
+import { Demoanchor } from "../app/src/idl/demoanchor";
 
 describe("demoanchor", () => {
   // Configure the client to use the local cluster.

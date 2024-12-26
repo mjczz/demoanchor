@@ -1,5 +1,5 @@
 import * as anchor from "@coral-xyz/anchor";
-import {Fight} from "../target/types/fight";
+import {Fight} from "../app/src/idl/fight";
 
 describe("fight", () => {
     const provider = anchor.AnchorProvider.local();
