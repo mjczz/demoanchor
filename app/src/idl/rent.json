@@ -1,0 +1,68 @@
+{
+  "address": "7gUT8ZTgtzMMydSwWVN56pPnFGA2k8QoAtmKJT89NgQ3",
+  "metadata": {
+    "name": "rent",
+    "version": "0.1.0",
+    "spec": "0.1.0",
+    "description": "Created with Anchor"
+  },
+  "instructions": [
+    {
+      "name": "create_system_account",
+      "discriminator": [
+        67,
+        217,
+        132,
+        246,
+        135,
+        232,
+        191,
+        81
+      ],
+      "accounts": [
+        {
+          "name": "payer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "new_account",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "address_data",
+          "type": {
+            "defined": {
+              "name": "AddressData"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "types": [
+    {
+      "name": "AddressData",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "address",
+            "type": "string"
+          }
+        ]
+      }
+    }
+  ]
+}
