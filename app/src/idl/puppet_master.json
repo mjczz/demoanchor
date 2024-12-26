@@ -1,63 +1,37 @@
 {
-  "address": "B3vZWPDzrEvsrD1yy5bQKmCe4SiF5VjyBopZXH2rn2cM",
+  "address": "AY6YPi18PCdCn9bBHceCk6893bMuqeUph6SWrvhuo45Q",
   "metadata": {
-    "name": "puppet",
+    "name": "puppet_master",
     "version": "0.1.0",
     "spec": "0.1.0",
-    "description": "Created with Anchor"
+    "description": "Created with Anchor test for cpi"
   },
   "instructions": [
     {
-      "name": "initialize",
+      "name": "pull_strings",
       "discriminator": [
-        175,
-        175,
-        109,
-        31,
         13,
-        152,
-        155,
-        237
-      ],
-      "accounts": [
-        {
-          "name": "puppet",
-          "writable": true,
-          "signer": true
-        },
-        {
-          "name": "user",
-          "writable": true,
-          "signer": true
-        },
-        {
-          "name": "system_program",
-          "address": "11111111111111111111111111111111"
-        }
-      ],
-      "args": []
-    },
-    {
-      "name": "set_data",
-      "discriminator": [
-        223,
-        114,
-        91,
-        136,
-        197,
-        78,
-        153,
-        153
+        252,
+        243,
+        149,
+        120,
+        132,
+        189,
+        145
       ],
       "accounts": [
         {
           "name": "puppet",
           "writable": true
+        },
+        {
+          "name": "puppet_program",
+          "address": "B3vZWPDzrEvsrD1yy5bQKmCe4SiF5VjyBopZXH2rn2cM"
         }
       ],
       "args": [
         {
-          "name": "data_param",
+          "name": "data",
           "type": "u64"
         },
         {

@@ -4,7 +4,10 @@ local-test:
 
 # build specifiy the output directory for the IDL.
 build:
-	anchor build --idl $(shell pwd)/app/src/idl/
+	anchor build --idl $(shell pwd)/app/idl-types
+
+build-target:
+	anchor build
 
 # 部署生成 bpf,以.so为后缀的可在区块链上执行的bpf字节程序
 deploy:
@@ -15,7 +18,8 @@ test:
 	anchor test --skip-local-validator --skip-deploy --skip-build --skip-lint
 
 testm:
-	ANCHOR_PROVIDER_URL=http://127.0.0.1:8899 ANCHOR_WALLET=~/.config/solana/id.json ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts
+	#ANCHOR_PROVIDER_URL=http://127.0.0.1:8899 ANCHOR_WALLET=~/.config/solana/id.json ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts
+	ANCHOR_PROVIDER_URL=http://127.0.0.1:8899 ANCHOR_WALLET=~/.config/solana/id.json ts-mocha -p ./tsconfig.json -t 1000000 tests/**/test_puppet-cpi.ts
 
 keys:
 	anchor keys list
