@@ -3,13 +3,20 @@ use puppet::cpi::accounts::SetData;
 use puppet::program::Puppet;
 use puppet::{self, PData};
 
-declare_id!("AY6YPi18PCdCn9bBHceCk6893bMuqeUph6SWrvhuo45Q");
+declare_id!("7S7JNp88GfyKkrmtpFpJy8NqDdLA7shFPJ5tzHb2UWSy");
 
 #[program]
 mod puppet_master {
     use super::*;
     pub fn pull_strings(ctx: Context<PullStrings>, data: u64, title: String) -> Result<()> {
-        puppet::cpi::set_data(ctx.accounts.set_data_ctx(), data, title)
+        puppet::cpi::set_data(ctx.accounts.set_data_ctx(), data, title);
+        // to read the value of an account that has just been changed by a CPI,
+        // call reload method which will re-deserialize the account
+        ctx.accounts.puppet.reload();
+        if ctx.accounts.puppet.pup_data != data {
+            panic!();
+        }
+        Ok(())
     }
 }
 

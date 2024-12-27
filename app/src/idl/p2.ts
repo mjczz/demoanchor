@@ -5,7 +5,7 @@
  * IDL can be found at `target/idl/p2.json`.
  */
 export type P2 = {
-  "address": "H24Tt2U2K5wdnBXNzthSVqfc1i1CkWhtJ3YbyNM7p1xA",
+  "address": "DhKPkbWWP8WCg71aesxWG9DVWn5JhUbADuEU177s5oA",
   "metadata": {
     "name": "p2",
     "version": "0.1.0",

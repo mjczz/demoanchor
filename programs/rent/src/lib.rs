@@ -3,7 +3,7 @@
 use anchor_lang::prelude::*;
 use anchor_lang::system_program;
 
-declare_id!("7gUT8ZTgtzMMydSwWVN56pPnFGA2k8QoAtmKJT89NgQ3");
+declare_id!("S6xBYpYTUn8LaAbG32dqMhWTyG647TLHBWnE1NLreNz");
 
 #[program]
 pub mod rent {

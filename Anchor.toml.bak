@@ -7,13 +7,13 @@ skip-lint = false
 # 更改对应program里面的 declare_id!("4ALfWS4aWMCrCUbnLAjUafVeREZDoGYMErNgv2LZ8T9U");
 # 改完之后 重新 `make build make dploy`，才能测试`make test`
 [programs.localnet]
-counter_anchor = "FNUySs7U7vhGEGJp7gykVnrTF7ADc9JdWmQN8DTTFVRo"
-demoanchor = "H3PTiZJrKv2RKP2K5KXaFH7JDKjScYBUDHcyTSUXzB9d"
-fight = "AQaCjYKWP1ei1dd6BwTU1CpMWngv2b2kx3e9mgikNGwG"
-p2 = "DhKPkbWWP8WCg71aesxWG9DVWn5JhUbADuEU177s5oA"
-puppet = "6hbdXkgoEHtpyaBYpqZQBfKpgujCANdg5pVBdPjLfyEn"
+counter_anchor = "iy7pJEc7gEJRjj4LgMNSbiVYGRh8ufZQtTEvnYvj5ow"
+demoanchor = "7hRaTZTmGhfFrTGGQND8XWFNBiMdf1xu3eYbbYGzeqKG"
+fight = "HF6biQrNj8PjfL675LzobDiyZB5venfriJMF5pPF6L9Z"
+p2 = "H24Tt2U2K5wdnBXNzthSVqfc1i1CkWhtJ3YbyNM7p1xA"
+puppet = "B3vZWPDzrEvsrD1yy5bQKmCe4SiF5VjyBopZXH2rn2cM"
 puppet-master = "AY6YPi18PCdCn9bBHceCk6893bMuqeUph6SWrvhuo45Q"
-rent = "S6xBYpYTUn8LaAbG32dqMhWTyG647TLHBWnE1NLreNz"
+rent = "7gUT8ZTgtzMMydSwWVN56pPnFGA2k8QoAtmKJT89NgQ3"
 
 [registry]
 url = "https://api.apr.dev"
