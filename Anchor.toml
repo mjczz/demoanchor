@@ -1,3 +1,5 @@
+[toolchain]
+
 [features]
 resolution = true
 skip-lint = false
@@ -8,6 +10,7 @@ skip-lint = false
 # 改完之后 重新 `make build make dploy`，才能测试`make test`
 [programs.localnet]
 counter_anchor = "FNUySs7U7vhGEGJp7gykVnrTF7ADc9JdWmQN8DTTFVRo"
+cpi_invoke_signed = "GpzQusdyzEKgKL7frLgaNSmuLW8he5TbrRneLnqtBGHT"
 demoanchor = "H3PTiZJrKv2RKP2K5KXaFH7JDKjScYBUDHcyTSUXzB9d"
 fight = "AQaCjYKWP1ei1dd6BwTU1CpMWngv2b2kx3e9mgikNGwG"
 p2 = "DhKPkbWWP8WCg71aesxWG9DVWn5JhUbADuEU177s5oA"
