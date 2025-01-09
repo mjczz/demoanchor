@@ -9,6 +9,9 @@ build:
 build-target:
 	anchor build
 
+idl-build:
+	 cd programs/enhanced_nft_program && ANCHOR_LOG=true anchor idl build
+
 # 部署生成 bpf,以.so为后缀的可在区块链上执行的bpf字节程序
 deploy:
 	anchor deploy
@@ -19,7 +22,8 @@ test:
 
 testm:
 	#ANCHOR_PROVIDER_URL=http://127.0.0.1:8899 ANCHOR_WALLET=~/.config/solana/id.json ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts
-	ANCHOR_PROVIDER_URL=http://127.0.0.1:8899 ANCHOR_WALLET=~/.config/solana/id.json ts-mocha -p ./tsconfig.json -t 1000000 tests/**/test_puppet-cpi.ts
+	#ANCHOR_PROVIDER_URL=http://127.0.0.1:8899 ANCHOR_WALLET=~/.config/solana/id.json ts-mocha -p ./tsconfig.json -t 1000000 tests/**/test_puppet-cpi.ts
+	ANCHOR_PROVIDER_URL=http://127.0.0.1:8899 ANCHOR_WALLET=~/.config/solana/id.json ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.rs
 
 keys:
 	anchor keys list
@@ -35,6 +39,8 @@ expand:
 	#cargo expand --package p2 > expand_code/p2.rs
 ##	cargo expand --package counter_anchor  > expand_code/counter_anchor.rs
 #	cargo expand --features "idl-build" -p p2 > expand_code/p2.rs
+	#cargo expand --package cpi_invoke_signed > expand_code/cpi_invoke_signed.rs
+	cargo expand --package cpi_invoke_signed > expand_code/cpi_invoke_signed.rs
 
 #最后一个参数是文件名，省略.rs后缀
 expand_test_file:

@@ -1,4 +1,6 @@
 [toolchain]
+channel = "1.83.0"
+
 
 [features]
 resolution = true
@@ -12,6 +14,7 @@ skip-lint = false
 counter_anchor = "FNUySs7U7vhGEGJp7gykVnrTF7ADc9JdWmQN8DTTFVRo"
 cpi_invoke_signed = "GpzQusdyzEKgKL7frLgaNSmuLW8he5TbrRneLnqtBGHT"
 demoanchor = "H3PTiZJrKv2RKP2K5KXaFH7JDKjScYBUDHcyTSUXzB9d"
+enhanced_nft_program = "4ecAtRiPXREJfJUV34ptoYcNvS1bUybqajo8V9AxauPz"
 fight = "AQaCjYKWP1ei1dd6BwTU1CpMWngv2b2kx3e9mgikNGwG"
 p2 = "DhKPkbWWP8WCg71aesxWG9DVWn5JhUbADuEU177s5oA"
 puppet = "6hbdXkgoEHtpyaBYpqZQBfKpgujCANdg5pVBdPjLfyEn"
