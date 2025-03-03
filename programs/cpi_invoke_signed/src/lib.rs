@@ -1,7 +1,7 @@
 use anchor_lang::prelude::*;
 use anchor_lang::solana_program::{program::invoke_signed, system_instruction};
 
-declare_id!("GpzQusdyzEKgKL7frLgaNSmuLW8he5TbrRneLnqtBGHT");
+declare_id!("6Eog9be1waUCL49v2NangBFR2uKJdjwyKxjuEdZZrrzA");
 
 #[program]
 pub mod cpi_invoke_signed {

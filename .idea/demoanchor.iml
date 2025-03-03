@@ -13,6 +13,7 @@
       <sourceFolder url="file://$MODULE_DIR$/native/solana_nft/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/programs/enhanced_nft_program/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/programs/my-nft-project/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/programs/memo-transfer/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />

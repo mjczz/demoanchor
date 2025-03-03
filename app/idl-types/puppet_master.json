@@ -1,20 +1,14 @@
-/**
- * Program IDL in camelCase format in order to be used in JS/TS.
- *
- * Note that this is only a type helper and is not the actual IDL. The original
- * IDL can be found at `target/idl/puppet_master.json`.
- */
-export type PuppetMaster = {
+{
   "address": "9LaTbxL5N1rp6MQJLX8gEmxyGcHEvH95i3EiZNFfJRMs",
   "metadata": {
-    "name": "puppetMaster",
+    "name": "puppet_master",
     "version": "0.1.0",
     "spec": "0.1.0",
     "description": "Created with Anchor test for cpi"
   },
   "instructions": [
     {
-      "name": "pullStrings",
+      "name": "pull_strings",
       "discriminator": [
         13,
         252,
@@ -31,7 +25,7 @@ export type PuppetMaster = {
           "writable": true
         },
         {
-          "name": "puppetProgram",
+          "name": "puppet_program",
           "address": "GJbH3qTghYJm2cuGekEsBUPVZZKdWp8xqE1tx1trwtHF"
         }
       ],
@@ -49,7 +43,7 @@ export type PuppetMaster = {
   ],
   "accounts": [
     {
-      "name": "pData",
+      "name": "PData",
       "discriminator": [
         199,
         118,
@@ -64,12 +58,12 @@ export type PuppetMaster = {
   ],
   "types": [
     {
-      "name": "pData",
+      "name": "PData",
       "type": {
         "kind": "struct",
         "fields": [
           {
-            "name": "pupData",
+            "name": "pup_data",
             "type": "u64"
           },
           {
@@ -80,4 +74,4 @@ export type PuppetMaster = {
       }
     }
   ]
-};
+}

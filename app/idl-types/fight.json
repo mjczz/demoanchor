@@ -1,10 +1,4 @@
-/**
- * Program IDL in camelCase format in order to be used in JS/TS.
- *
- * Note that this is only a type helper and is not the actual IDL. The original
- * IDL can be found at `target/idl/fight.json`.
- */
-export type Fight = {
+{
   "address": "HsZY8ghmusmETnPfbAFPhqhTrrgtf2T74piBkUZgSbwH",
   "metadata": {
     "name": "fight",
@@ -27,7 +21,7 @@ export type Fight = {
       ],
       "accounts": [
         {
-          "name": "actionState",
+          "name": "action_state",
           "writable": true,
           "pda": {
             "seeds": [
@@ -61,7 +55,7 @@ export type Fight = {
           "signer": true
         },
         {
-          "name": "systemProgram",
+          "name": "system_program",
           "address": "11111111111111111111111111111111"
         }
       ],
@@ -81,7 +75,7 @@ export type Fight = {
       ],
       "accounts": [
         {
-          "name": "actionState",
+          "name": "action_state",
           "writable": true
         },
         {
@@ -89,7 +83,7 @@ export type Fight = {
           "writable": true,
           "signer": true,
           "relations": [
-            "actionState"
+            "action_state"
           ]
         }
       ],
@@ -109,7 +103,7 @@ export type Fight = {
       ],
       "accounts": [
         {
-          "name": "actionState",
+          "name": "action_state",
           "writable": true
         },
         {
@@ -117,7 +111,7 @@ export type Fight = {
           "writable": true,
           "signer": true,
           "relations": [
-            "actionState"
+            "action_state"
           ]
         }
       ],
@@ -137,7 +131,7 @@ export type Fight = {
       ],
       "accounts": [
         {
-          "name": "actionState",
+          "name": "action_state",
           "writable": true
         },
         {
@@ -145,7 +139,7 @@ export type Fight = {
           "writable": true,
           "signer": true,
           "relations": [
-            "actionState"
+            "action_state"
           ]
         }
       ],
@@ -165,7 +159,7 @@ export type Fight = {
       ],
       "accounts": [
         {
-          "name": "actionState",
+          "name": "action_state",
           "writable": true
         },
         {
@@ -173,7 +167,7 @@ export type Fight = {
           "writable": true,
           "signer": true,
           "relations": [
-            "actionState"
+            "action_state"
           ]
         }
       ],
@@ -182,7 +176,7 @@ export type Fight = {
   ],
   "accounts": [
     {
-      "name": "actionState",
+      "name": "ActionState",
       "discriminator": [
         68,
         223,
@@ -197,7 +191,7 @@ export type Fight = {
   ],
   "types": [
     {
-      "name": "actionState",
+      "name": "ActionState",
       "type": {
         "kind": "struct",
         "fields": [
@@ -213,4 +207,4 @@ export type Fight = {
       }
     }
   ]
-};
+}

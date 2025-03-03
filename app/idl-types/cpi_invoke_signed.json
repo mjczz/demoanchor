@@ -1,20 +1,14 @@
-/**
- * Program IDL in camelCase format in order to be used in JS/TS.
- *
- * Note that this is only a type helper and is not the actual IDL. The original
- * IDL can be found at `target/idl/cpi_invoke_signed.json`.
- */
-export type CpiInvokeSigned = {
+{
   "address": "6Eog9be1waUCL49v2NangBFR2uKJdjwyKxjuEdZZrrzA",
   "metadata": {
-    "name": "cpiInvokeSigned",
+    "name": "cpi_invoke_signed",
     "version": "0.1.0",
     "spec": "0.1.0",
     "description": "Created with Anchor"
   },
   "instructions": [
     {
-      "name": "solTransfer",
+      "name": "sol_transfer",
       "discriminator": [
         135,
         254,
@@ -27,7 +21,7 @@ export type CpiInvokeSigned = {
       ],
       "accounts": [
         {
-          "name": "pdaAccount",
+          "name": "pda_account",
           "writable": true,
           "pda": {
             "seeds": [
@@ -51,7 +45,7 @@ export type CpiInvokeSigned = {
           "writable": true
         },
         {
-          "name": "systemProgram",
+          "name": "system_program",
           "address": "11111111111111111111111111111111"
         }
       ],
@@ -63,4 +57,4 @@ export type CpiInvokeSigned = {
       ]
     }
   ]
-};
+}

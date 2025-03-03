@@ -1,10 +1,4 @@
-/**
- * Program IDL in camelCase format in order to be used in JS/TS.
- *
- * Note that this is only a type helper and is not the actual IDL. The original
- * IDL can be found at `target/idl/rent.json`.
- */
-export type Rent = {
+{
   "address": "5yhJHorpVDvCnF4Sxt4YdQ9aBs8oCoiyB4WizYYviFVB",
   "metadata": {
     "name": "rent",
@@ -14,7 +8,7 @@ export type Rent = {
   },
   "instructions": [
     {
-      "name": "createSystemAccount",
+      "name": "create_system_account",
       "discriminator": [
         67,
         217,
@@ -32,21 +26,21 @@ export type Rent = {
           "signer": true
         },
         {
-          "name": "newAccount",
+          "name": "new_account",
           "writable": true,
           "signer": true
         },
         {
-          "name": "systemProgram",
+          "name": "system_program",
           "address": "11111111111111111111111111111111"
         }
       ],
       "args": [
         {
-          "name": "addressData",
+          "name": "address_data",
           "type": {
             "defined": {
-              "name": "addressData"
+              "name": "AddressData"
             }
           }
         }
@@ -55,7 +49,7 @@ export type Rent = {
   ],
   "types": [
     {
-      "name": "addressData",
+      "name": "AddressData",
       "type": {
         "kind": "struct",
         "fields": [
@@ -71,4 +65,4 @@ export type Rent = {
       }
     }
   ]
-};
+}

@@ -1,13 +1,7 @@
-/**
- * Program IDL in camelCase format in order to be used in JS/TS.
- *
- * Note that this is only a type helper and is not the actual IDL. The original
- * IDL can be found at `target/idl/counter_anchor.json`.
- */
-export type CounterAnchor = {
-  "address": "AcG1Epv2hyuYqFbKtGRQrj4d85j5UWsMhWujoFLDnz6T",
+{
+  "address": "12i4RiKqcPszvnA7VgR85EE3Th3Sg4Brm5YMSpzDxJX6",
   "metadata": {
-    "name": "counterAnchor",
+    "name": "p2",
     "version": "0.1.0",
     "spec": "0.1.0",
     "description": "Created with Anchor"
@@ -34,30 +28,30 @@ export type CounterAnchor = {
       "args": []
     },
     {
-      "name": "initializeCounter",
+      "name": "initialize",
       "discriminator": [
-        67,
-        89,
-        100,
-        87,
-        231,
-        172,
-        35,
-        124
+        175,
+        175,
+        109,
+        31,
+        13,
+        152,
+        155,
+        237
       ],
       "accounts": [
-        {
-          "name": "payer",
-          "writable": true,
-          "signer": true
-        },
         {
           "name": "counter",
           "writable": true,
           "signer": true
         },
         {
-          "name": "systemProgram",
+          "name": "user",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "system_program",
           "address": "11111111111111111111111111111111"
         }
       ],
@@ -66,7 +60,7 @@ export type CounterAnchor = {
   ],
   "accounts": [
     {
-      "name": "counter",
+      "name": "Counter",
       "discriminator": [
         255,
         176,
@@ -81,7 +75,7 @@ export type CounterAnchor = {
   ],
   "types": [
     {
-      "name": "counter",
+      "name": "Counter",
       "type": {
         "kind": "struct",
         "fields": [
@@ -93,4 +87,4 @@ export type CounterAnchor = {
       }
     }
   ]
-};
+}

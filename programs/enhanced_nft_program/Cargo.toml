@@ -21,8 +21,3 @@ idl-build = ["anchor-lang/idl-build", "anchor-spl/idl-build"]
 [dependencies]
 anchor-lang = { workspace = true }
 anchor-spl = { workspace = true }
-signature = "1.6.4"
-solana-program-test.workspace = true
-solana-program.workspace = true
-solana-sdk.workspace = true
-tokio.workspace = true

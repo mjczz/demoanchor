@@ -1,9 +1,9 @@
 use anchor_lang::prelude::*;
+use anchor_lang::solana_program;
 use anchor_spl::token::{self, Mint, MintTo, Token, TokenAccount, Transfer};
-use solana_program;
 
-declare_id!("4ecAtRiPXREJfJUV34ptoYcNvS1bUybqajo8V9AxauPz");
-
+declare_id!("FjgPnuFAxA6rVf87N1yd695sAhEZBtm5ZtdiQznRpVkE");
+//
 #[program]
 pub mod enhanced_nft_program {
     use super::*;
@@ -118,96 +118,3 @@ pub enum NftError {
     #[msg("The maximum supply has been exceeded.")]
     MaxSupplyExceeded,
 }
-
-// #[cfg(test)]
-// mod tests {
-//     pub use crate::enhanced_nft_program::{
-//         accounts::CreateNft as CreateNft1, entry, id, instruction::CreateNft, NftData,
-//     };
-//     use solana_program_test::*;
-//     use solana_sdk::{
-//         account::Account,
-//         instruction::Instruction,
-//         signature::{Keypair, Signer},
-//         transaction::Transaction,
-//     };
-//
-//     #[tokio::test]
-//     async fn test_create_nft() {
-//         // Step 1: Initialize a program test environment
-//         let program_id = id();
-//         let mut program_test = ProgramTest::new(
-//             "enhanced_nft_program", // Program name
-//             program_id,             // Program ID
-//             processor!(entry),      // Entry point of the program
-//         );
-//
-//         // Step 2: Add accounts
-//         // let payer  = solana_sdk::pubkey::Pubkey::new_unique();
-//         let payer = Keypair::new();
-//         let nft_data = Keypair::new();
-//         let mint = Keypair::new();
-//
-//         program_test.add_account(
-//             payer.pubkey(),
-//             Account {
-//                 lamports: 1_000_000_000, // Add some SOL to the payer account
-//                 owner: solana_program::system_program::id(),
-//                 ..Account::default()
-//             },
-//         );
-//
-//         // Step 3: Start test context
-//         let mut ctx = program_test.start_with_context().await;
-//
-//         // Step 4: Create NFT instruction
-//         let name = "MyNFT".to_string();
-//         let symbol = "MNFT".to_string();
-//         let max_supply = 1000;
-//
-//         let accounts = CreateNft {
-//             nft_data: nft_data.pubkey(),
-//             mint: mint.pubkey(),
-//             payer: payer.pubkey(),
-//             system_program: solana_program::system_program::id(),
-//             token_program: anchor_spl::token::ID,
-//         };
-//
-//         let create_nft_ix = Instruction {
-//             program_id,
-//             accounts: accounts.to_account_metas(None),
-//             data: CreateNft {
-//                 name: name.clone(),
-//                 symbol: symbol.clone(),
-//                 max_supply,
-//             }
-//             .data(),
-//         };
-//
-//         // Step 5: Construct and send transaction
-//         let mut tx = Transaction::new_with_payer(&[create_nft_ix], Some(&payer.pubkey()));
-//         tx.sign(&[&payer, &nft_data, &mint], ctx.last_blockhash);
-//
-//         ctx.banks_client
-//             .process_transaction(tx)
-//             .await
-//             .expect("Failed to process transaction");
-//
-//         // Step 6: Fetch the account and verify the result
-//         let nft_data_account: NftData = ctx
-//             .banks_client
-//             .get_account(nft_data.pubkey())
-//             .await
-//             .expect("Failed to fetch account")
-//             .map(|account| {
-//                 anchor_lang::AccountDeserialize::try_deserialize(&mut account.data.as_slice())
-//                     .expect("Failed to deserialize account")
-//             })
-//             .expect("NFT data account not found");
-//
-//         assert_eq!(nft_data_account.name, name);
-//         assert_eq!(nft_data_account.symbol, symbol);
-//         assert_eq!(nft_data_account.max_supply, max_supply);
-//         assert_eq!(nft_data_account.supply, 0);
-//     }
-// }
