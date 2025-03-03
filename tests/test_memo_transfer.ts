@@ -3,7 +3,7 @@ import type { Program } from '@coral-xyz/anchor';
 import { createMemoInstruction } from '@solana/spl-memo';
 import { TOKEN_2022_PROGRAM_ID, createAccount, createMint, createTransferInstruction, mintTo } from '@solana/spl-token';
 import { Transaction, sendAndConfirmTransaction } from '@solana/web3.js';
-import type { MemoTransfer } from '../target/types/memo_transfer';
+import type { MemoTransfer } from '../app/src/idl/memo_transfer';
 
 describe('memo-transfer', () => {
   // Configure the client to use the local cluster.
