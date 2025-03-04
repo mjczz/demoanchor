@@ -1,6 +1,5 @@
 import * as anchor from "@coral-xyz/anchor";
-import {CpiInvokeSigned} from "../app/src/idl/cpi_invoke_signed";
-import {Fight} from "../app/src/idl/fight";
+import {CpiInvokeSigned} from "../app/idl-ts/cpi_invoke_signed";
 import {
     PublicKey,
     SystemProgram,

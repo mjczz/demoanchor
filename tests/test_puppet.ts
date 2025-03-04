@@ -2,7 +2,7 @@ import * as anchor from '@coral-xyz/anchor';
 import { Program } from '@coral-xyz/anchor';
 import { Keypair } from '@solana/web3.js';
 import { assert } from 'chai';
-import { Puppet } from '../app/src/idl/puppet'; // 确保路径正确
+import { Puppet } from '../app/idl-ts/puppet'; // 确保路径正确
 
 describe('puppet', () => {
     // 配置 Anchor 客户端

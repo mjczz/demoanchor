@@ -2,7 +2,7 @@ import * as anchor from "@coral-xyz/anchor";
 import {Program} from "@coral-xyz/anchor";
 import {PublicKey, SystemProgram} from "@solana/web3.js";
 import {assert} from "chai";
-import {EnhancedNftProgram} from "../app/src/idl/enhanced_nft_program";
+import {EnhancedNftProgram} from "../app/idl-ts/enhanced_nft_program";
 import { Token, TOKEN_PROGRAM_ID, createMint, createAccount, mintTo, getAccount } from "@solana/spl-token";
 
 describe("Enhanced NFT Program", () => {

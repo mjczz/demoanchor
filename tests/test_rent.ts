@@ -1,7 +1,7 @@
 import * as anchor from '@coral-xyz/anchor';
 // @ts-ignore
-import Idl from '../app/src/idl/rent.json';
-import type {Rent} from '../app/src/idl/rent';
+import Idl from '../app/idl/rent.json';
+import type {Rent} from '../app/idl-ts/rent';
 
 describe('Create a system account', () => {
     const provider = anchor.AnchorProvider.env();

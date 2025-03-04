@@ -4,7 +4,9 @@ local-test:
 
 # build specifiy the output directory for the IDL.
 build:
-	anchor build -p memo_transfer  --idl $(shell pwd)/app/idl-types
+	#anchor build -p memo_transfer  --idl $(shell pwd)/app/idl-types
+	#anchor build -p memo_transfer --idl-ts $(shell pwd)/app/idl-types
+	anchor build --idl-ts $(shell pwd)/app/idl-ts --idl $(shell pwd)/app/idl
 
 build-target:
 	anchor build

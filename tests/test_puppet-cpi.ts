@@ -2,8 +2,8 @@ import * as anchor from '@coral-xyz/anchor'
 import {Program} from '@coral-xyz/anchor'
 import {Keypair} from '@solana/web3.js'
 import {expect} from 'chai'
-import {Puppet} from '../app/src/idl/puppet'
-import {PuppetMaster} from '../app/src/idl/puppet_master'
+import {Puppet} from '../app/idl-ts/puppet'
+import {PuppetMaster} from '../app/idl-ts/puppet_master'
 
 
 describe('call puppet program by cpi', () => {
