@@ -7,7 +7,8 @@
   },
   "dependencies": {
     "@coral-xyz/anchor": "file:ts/packages/anchor",
-    "@coral-xyz/spl-token": "file:ts/packages/spl-token"
+    "@coral-xyz/spl-token": "file:ts/packages/spl-token",
+    "@solana/spl-memo": "file:ts/packages/spl-memo"
   },
   "devDependencies": {
     "chai": "^4.3.4",

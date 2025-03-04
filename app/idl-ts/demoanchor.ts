@@ -5,7 +5,7 @@
  * IDL can be found at `target/idl/demoanchor.json`.
  */
 export type Demoanchor = {
-  "address": "Bswqr1Y7ZbpJKws9tAYubGJQ5XpdAuywSBoThPxLQHkm",
+  "address": "4wYWQ4DZMjy9wahmnjeZGt63qbkGkj7GXzGzztPtjadN",
   "metadata": {
     "name": "demoanchor",
     "version": "0.1.0",

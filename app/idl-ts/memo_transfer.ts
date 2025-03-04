@@ -5,7 +5,7 @@
  * IDL can be found at `target/idl/memo_transfer.json`.
  */
 export type MemoTransfer = {
-  "address": "5BQyC7y2Pc283woThq11uZRqsgcRbBRLKz4yQ8BJadi2",
+  "address": "J4iaRoVuviTtPFPGVKd991VL49BFB4b7uAfAg2ypgtG4",
   "metadata": {
     "name": "memoTransfer",
     "version": "0.1.0",

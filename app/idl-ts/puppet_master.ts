@@ -5,7 +5,7 @@
  * IDL can be found at `target/idl/puppet_master.json`.
  */
 export type PuppetMaster = {
-  "address": "9LaTbxL5N1rp6MQJLX8gEmxyGcHEvH95i3EiZNFfJRMs",
+  "address": "A4YSiaX2jWBWuYcFgAW1AAgUehBBk2NYmWyrfJhFwaPE",
   "metadata": {
     "name": "puppetMaster",
     "version": "0.1.0",
@@ -32,7 +32,7 @@ export type PuppetMaster = {
         },
         {
           "name": "puppetProgram",
-          "address": "GJbH3qTghYJm2cuGekEsBUPVZZKdWp8xqE1tx1trwtHF"
+          "address": "6isZqi2DALvxQ7xMpJCnuomBSXRzynVdnCaLKhwhEghx"
         }
       ],
       "args": [

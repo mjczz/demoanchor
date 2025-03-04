@@ -5,7 +5,7 @@
  * IDL can be found at `target/idl/rent.json`.
  */
 export type Rent = {
-  "address": "5yhJHorpVDvCnF4Sxt4YdQ9aBs8oCoiyB4WizYYviFVB",
+  "address": "5BthpXLKtGaFGxMM5hddEETZ5rK8HRr5ycUoxGZutYmJ",
   "metadata": {
     "name": "rent",
     "version": "0.1.0",

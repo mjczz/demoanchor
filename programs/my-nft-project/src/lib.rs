@@ -1,6 +1,6 @@
 use anchor_lang::prelude::*;
 use anchor_lang::solana_program as anchor_solana_program;
-declare_id!("5CYqYfU4QCq9krUaw2XbbtEPGkqR8xiMNwg7cgtY6DHW");
+declare_id!("CEsNVjPRYWKcGpLNo1DHm7MqmXhcbYGiB1keVGiiqGSx");
 
 #[program]
 pub mod my_nft_project {

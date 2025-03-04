@@ -5,7 +5,7 @@
  * IDL can be found at `target/idl/enhanced_nft_program.json`.
  */
 export type EnhancedNftProgram = {
-  "address": "FjgPnuFAxA6rVf87N1yd695sAhEZBtm5ZtdiQznRpVkE",
+  "address": "AWBoVedyrGe6Bj4Bc9jxWkTfjvSBssdLioREjc6vEAFn",
   "metadata": {
     "name": "enhancedNftProgram",
     "version": "0.1.0",

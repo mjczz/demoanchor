@@ -5,7 +5,7 @@
  * IDL can be found at `target/idl/counter_anchor.json`.
  */
 export type CounterAnchor = {
-  "address": "AcG1Epv2hyuYqFbKtGRQrj4d85j5UWsMhWujoFLDnz6T",
+  "address": "2oEW1EeLMc5gHe8KG22yAFLymHVJUQcsB3nmKyWubvkp",
   "metadata": {
     "name": "counterAnchor",
     "version": "0.1.0",

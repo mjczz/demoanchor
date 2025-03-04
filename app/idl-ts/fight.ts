@@ -5,7 +5,7 @@
  * IDL can be found at `target/idl/fight.json`.
  */
 export type Fight = {
-  "address": "HsZY8ghmusmETnPfbAFPhqhTrrgtf2T74piBkUZgSbwH",
+  "address": "5Nr9sNTP9XjSJtB7mjm2hFqrMnFq3fNLKCKcAeTXMgtX",
   "metadata": {
     "name": "fight",
     "version": "0.1.0",

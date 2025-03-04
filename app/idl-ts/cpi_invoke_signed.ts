@@ -5,7 +5,7 @@
  * IDL can be found at `target/idl/cpi_invoke_signed.json`.
  */
 export type CpiInvokeSigned = {
-  "address": "6Eog9be1waUCL49v2NangBFR2uKJdjwyKxjuEdZZrrzA",
+  "address": "3y8CHDRoYTJcxbtei7V5wb5n3JZH1W2V4oigCAeTPwdT",
   "metadata": {
     "name": "cpiInvokeSigned",
     "version": "0.1.0",

@@ -2,7 +2,7 @@ use anchor_lang::prelude::*;
 use anchor_lang::solana_program;
 use anchor_spl::token::{self, Mint, MintTo, Token, TokenAccount, Transfer};
 
-declare_id!("FjgPnuFAxA6rVf87N1yd695sAhEZBtm5ZtdiQznRpVkE");
+declare_id!("AWBoVedyrGe6Bj4Bc9jxWkTfjvSBssdLioREjc6vEAFn");
 //
 #[program]
 pub mod enhanced_nft_program {

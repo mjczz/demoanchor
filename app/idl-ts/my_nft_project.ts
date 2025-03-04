@@ -5,7 +5,7 @@
  * IDL can be found at `target/idl/my_nft_project.json`.
  */
 export type MyNftProject = {
-  "address": "5CYqYfU4QCq9krUaw2XbbtEPGkqR8xiMNwg7cgtY6DHW",
+  "address": "CEsNVjPRYWKcGpLNo1DHm7MqmXhcbYGiB1keVGiiqGSx",
   "metadata": {
     "name": "myNftProject",
     "version": "0.1.0",

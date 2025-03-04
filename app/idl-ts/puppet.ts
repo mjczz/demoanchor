@@ -5,7 +5,7 @@
  * IDL can be found at `target/idl/puppet.json`.
  */
 export type Puppet = {
-  "address": "GJbH3qTghYJm2cuGekEsBUPVZZKdWp8xqE1tx1trwtHF",
+  "address": "6isZqi2DALvxQ7xMpJCnuomBSXRzynVdnCaLKhwhEghx",
   "metadata": {
     "name": "puppet",
     "version": "0.1.0",
