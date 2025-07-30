@@ -15,7 +15,7 @@ describe('counter_anchor', () => {
   // Generate a new keypair for the counter account
   const counterKeypair = new Keypair();
 
-  it('Initialize Counter', async () => {
+  it(`Initialize Counter ${counterKeypair.publicKey}`, async () => {
     await program.methods
       .initializeCounter()
       .accounts({
@@ -30,7 +30,7 @@ describe('counter_anchor', () => {
     assert(currentCount.count.toNumber() === 0, 'Expected initialized count to be 0');
   });
 
-  it('Increment Counter', async () => {
+  it(`Increment Counter ${counterKeypair.publicKey}`, async () => {
     await program.methods.increment().accounts({ counter: counterKeypair.publicKey }).rpc();
 
     const currentCount = await program.account.counter.fetch(counterKeypair.publicKey);
@@ -38,7 +38,7 @@ describe('counter_anchor', () => {
     assert(currentCount.count.toNumber() === 1, 'Expected  count to be 1');
   });
 
-  it('Increment Counter Again', async () => {
+  it(`Increment Counter Again ${counterKeypair.publicKey}`, async () => {
     await program.methods.increment().accounts({ counter: counterKeypair.publicKey }).rpc();
 
     const currentCount = await program.account.counter.fetch(counterKeypair.publicKey);
